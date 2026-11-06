@@ -1,0 +1,81 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: journal
+    label: The Journal
+    type: collection
+    path: content/journal
+    fields:
+      - name: title
+        label: Article Title
+        type: string
+        required: true
+      - name: arcana
+        label: Related Arcana
+        type: string
+      - name: image
+        label: Cover Image
+        type: image
+      - name: description
+        label: Introduction
+        type: text
+      - name: body
+        label: Article
+        type: rich-text
+
+  - name: arcana
+    label: The Arcana
+    type: collection
+    path: content/arcana
+    fields:
+      - name: title
+        label: Card Name
+        type: string
+        required: true
+      - name: number
+        label: Card Number
+        type: string
+      - name: image
+        label: Main Image
+        type: image
+      - name: body
+        label: Chapter Introduction
+        type: rich-text
+
+  - name: directory
+    label: The Directory
+    type: collection
+    path: content/directory
+    fields:
+      - name: title
+        label: Research Topic
+        type: string
+        required: true
+      - name: arcana
+        label: Related Card
+        type: string
+      - name: body
+        label: Research Content
+        type: rich-text
+
+  - name: energy-checks
+    label: Energy Checks
+    type: collection
+    path: content/energy-checks
+    fields:
+      - name: title
+        label: Reading Title
+        type: string
+        required: true
+      - name: arcana
+        label: Related Card
+        type: string
+      - name: symbol
+        label: Symbol PNG
+        type: image
+      - name: body
+        label: Reading Message
+        type: rich-text
